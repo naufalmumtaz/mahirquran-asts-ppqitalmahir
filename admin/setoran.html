@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setoran Nilai - Admin</title>
+    <link rel="stylesheet" href="./../css/admin/setoran.css" />
+  </head>
+  <body>
+    <main class="dashboard">
+      <div class="container">
+        <div class="dashboard__content">
+          <div class="dashboard__content__quran-panel">
+            <div class="card">
+              <div class="card__header">
+                <button>
+                  <img
+                    src="./../assets/icons/navigation/arrow-left.svg"
+                    alt="left icon"
+                    width="30"
+                  />
+                </button>
+                <h4 class="card__header__page">Hal. 604</h4>
+                <button>
+                  <img
+                    src="./../assets/icons/navigation/arrow-right.svg"
+                    alt="right icon"
+                    width="30"
+                  />
+                </button>
+              </div>
+              <div class="card__body"></div>
+              <div class="card__footer">
+                <h4 class="card__footer__surahname">An - Naas</h4>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard__content__record-panel">
+            <div class="card">
+              <h4>Rekam</h4>
+              <button class="record-btn"></button>
+            </div>
+          </div>
+          <div class="dashboard__content__form-panel">
+            <div class="card">
+              <div class="card__body">
+                <div class="card__body__field">
+                  <select name="santri" id="santri">
+                    <option>Muhammad Jundi</option>
+                    <option>Muhammad Jaabir</option>
+                    <option>Muhammad Abdullah</option>
+                  </select>
+                </div>
+                <div class="card__body__field">
+                  <input
+                    type="score"
+                    name="score"
+                    id="score"
+                    placeholder="Input Nilai"
+                  />
+                </div>
+                <div class="card__body__field">
+                  <textarea
+                    name="evaluation"
+                    id="evaluation"
+                    placeholder="Catatan"
+                    rows="10"
+                  ></textarea>
+                </div>
+                <div class="card__body__field">
+                  <a href="./setoran.html" class="btn-submit">Submit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <nav class="navigation">
+        <ul>
+          <li>
+            <a href="./dashboard.html"
+              ><img src="./../assets/icons/dashboard.svg" alt="dashboard icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./hafalan.html"
+              ><img src="./../assets/icons/hafalan.svg" alt="hafalan icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./santri.html"
+              ><img src="./../assets/icons/santri.svg" alt="santri icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./notifications.html"
+              ><img src="./../assets/icons/bell.svg" alt="notification icon"
+            /></a>
+          </li>
+          <li>
+            <a href="./settings.html"
+              ><img src="./../assets/icons/settings.svg" alt="settings icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>

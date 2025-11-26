@@ -1,0 +1,152 @@
+@import url("./../global.css");
+@import url("./../dashboard-template.css");
+
+.dashboard .dashboard__content {
+  display: grid;
+  grid-template-areas:
+    "quran-panel"
+    "record-panel"
+    "form-panel";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 30px;
+  height: 100%;
+}
+
+.dashboard .dashboard__content .dashboard__content__quran-panel {
+  grid-area: quran-panel;
+}
+
+.dashboard .dashboard__content .dashboard__content__quran-panel .card {
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__quran-panel
+  .card
+  .card__header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 1.2em;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__quran-panel
+  .card
+  .card__header
+  .card__header__page {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__quran-panel
+  .card
+  .card__header
+  button {
+  background: none;
+  cursor: pointer;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__quran-panel
+  .card
+  .card__body {
+  padding: 20px;
+  height: 80%;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__quran-panel
+  .card
+  .card__footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 1.2em;
+}
+
+.dashboard .dashboard__content .dashboard__content__record-panel {
+  grid-area: record-panel;
+}
+
+.dashboard .dashboard__content .dashboard__content__record-panel .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__record-panel
+  .card
+  .record-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.dashboard .dashboard__content .dashboard__content__form-panel {
+  grid-area: form-panel;
+}
+
+.dashboard .dashboard__content .dashboard__content__form-panel input,
+.dashboard .dashboard__content .dashboard__content__form-panel textarea,
+.dashboard .dashboard__content .dashboard__content__form-panel select {
+  padding: 20px;
+  width: 100%;
+  border-radius: 1.2em;
+  resize: none;
+  margin-bottom: 15px;
+}
+
+.dashboard .dashboard__content .dashboard__content__form-panel .btn-submit {
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 1.2em;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* TABLET UP */
+@media (min-width: 768px) {
+  .dashboard .dashboard__content .dashboard__content__record-panel .card {
+    padding: 40px 0px;
+  }
+}
+
+/* DESKTOP UP */
+@media (min-width: 992px) {
+  .dashboard .dashboard__content {
+    display: grid;
+    grid-template-areas:
+      "quran-panel record-panel"
+      "quran-panel form-panel";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 30px;
+    height: 100%;
+  }
+}

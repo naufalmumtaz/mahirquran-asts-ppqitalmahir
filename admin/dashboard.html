@@ -4,10 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - Admin</title>
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="./../css/admin/dashboard.css" />
   </head>
   <body>
-    <main>
+    <main class="dashboard">
+      <div class="container">
+        <h1 class="dashboard__title">Dashboard</h1>
+        <div class="dashboard__content">
+          <div class="dashboard__content__statistics-1">
+            <div class="card">
+              <div class="card__information">
+                <img
+                  src="./../assets/icons/santri_dark.svg"
+                  alt="santri icon"
+                />
+                <p>Jumlah Santri</p>
+              </div>
+              <h2 class="card__count">120</h2>
+            </div>
+            <div class="card">
+              <div class="card__information">
+                <img
+                  src="./../assets/icons/hafalan_dark.svg"
+                  alt="santri icon"
+                />
+                <p>Rata2 Juz Hafalan</p>
+              </div>
+              <h2 class="card__count">29</h2>
+            </div>
+            <div class="card">
+              <div class="card__information">
+                <img
+                  src="./../assets/icons/hafalan_dark.svg"
+                  alt="santri icon"
+                />
+                <p>Rata2 Target Hafalan</p>
+              </div>
+              <h2 class="card__count">30</h2>
+            </div>
+          </div>
+          <div class="dashboard__content__statistics-2">
+            <div class="card">
+              <div class="card__header">
+                <h4>Rata - Rata Peningkatan Hafalan</h4>
+              </div>
+              <div class="card__body">
+                <img src="./../assets/chart.png" alt="chart" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__header">
+                <h4>Notifikasi</h4>
+              </div>
+              <div class="card__body">
+                <p>Tidak ada notifikasi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <nav class="navigation">
         <ul>
           <li>
@@ -16,22 +72,22 @@
             /></a>
           </li>
           <li>
-            <a href="./dashboard.html"
+            <a href="./hafalan.html"
               ><img src="./../assets/icons/hafalan.svg" alt="hafalan icon"
             /></a>
           </li>
           <li>
-            <a href="./dashboard.html"
+            <a href="./santri.html"
               ><img src="./../assets/icons/santri.svg" alt="santri icon"
             /></a>
           </li>
           <li>
-            <a href="./dashboard.html"
+            <a href="./notifications.html"
               ><img src="./../assets/icons/bell.svg" alt="notification icon"
             /></a>
           </li>
           <li>
-            <a href="./dashboard.html"
+            <a href="./settings.html"
               ><img src="./../assets/icons/settings.svg" alt="settings icon"
             /></a>
           </li>

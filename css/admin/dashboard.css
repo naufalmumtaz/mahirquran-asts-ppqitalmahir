@@ -1,0 +1,110 @@
+@import url("./../global.css");
+@import url("./../dashboard-template.css");
+
+.dashboard .dashboard__content .dashboard__content__statistics-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.dashboard .dashboard__content .dashboard__content__statistics-1 .card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-1
+  .card
+  .card__information
+  img {
+  width: 100%;
+  max-width: 5em;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-1
+  .card
+  .card__information
+  p {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-1
+  .card
+  .card__count {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+.dashboard .dashboard__content .dashboard__content__statistics-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-2
+  .card
+  .card__header {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-2
+  .card
+  .card__body {
+  padding: 10px 0px;
+}
+
+.dashboard
+  .dashboard__content
+  .dashboard__content__statistics-2
+  .card
+  .card__body
+  img {
+  width: 100%;
+}
+
+/* TABLET UP */
+@media (min-width: 768px) {
+  .dashboard .dashboard__content .dashboard__content__statistics-1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .dashboard
+    .dashboard__content
+    .dashboard__content__statistics-1
+    .card:last-child {
+    grid-column: 1 / 3;
+  }
+}
+
+/* DESKTOP UP */
+@media (min-width: 992px) {
+  .dashboard .dashboard__content .dashboard__content__statistics-1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .dashboard
+    .dashboard__content
+    .dashboard__content__statistics-1
+    .card:last-child {
+    grid-column: 3/4;
+  }
+
+  .dashboard .dashboard__content .dashboard__content__statistics-2 {
+    grid-template-columns: 2fr 1fr;
+  }
+}
